@@ -1,0 +1,26 @@
+body{
+    background-color: #5cdb95;
+}
+
+ul{
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    border-style: solid;
+    padding-bottom: 15px;
+    border-width: 0 0 3px 0;
+    border-color: #05386b;
+}
+
+ul div{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #EDF5E1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 2rem;
+    margin-left: 20px;
+}
