@@ -1,8 +1,8 @@
-import { BsMusicNote, BsMusicNoteBeamed } from "react-icons/bs";
+import '../css/home.css'
 
 export default function Home() {
   return (
-    <div>
+    <div className="home-container">
     </div>
   );
 }

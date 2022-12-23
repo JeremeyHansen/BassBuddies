@@ -2,7 +2,6 @@ import { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import "../css/contact.css"
 
-
 export default function Contact(){
     const form = useRef();
     const [ email, setEmail ] = useState("")
