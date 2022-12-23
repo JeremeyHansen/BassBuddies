@@ -22,15 +22,22 @@
     border-width: 1px;
     border-color: #05386b;
     width: 100%;
-    animation: line1 2s linear infinite;
+    animation: line1 2s linear;
+    opacity: 0;
 
 }
 @keyframes line1 {
     0% {
       margin-right: 0;
+      opacity: 0;
+    }
+  
+    1% {
+      opacity: 100%;
     }
 
     100% {
+      opacity: 100%;
       margin-right: 220%;
     }
   }
@@ -41,16 +48,23 @@
     border-width: 2px;
     border-color: #05386b;
     width: 100%;
-    animation: line2 2s linear infinite;
+    animation: line2 2s linear;
+    opacity: 0;
 
 }
 @keyframes line2 {
     0% {
       margin-left: 0%;
+      opacity: 0;
     }
-
+  
+    1% {
+      opacity: 100%;
+    }
     100% {
       margin-left: 220%;
+      opacity: 100%;
+
     }
   }
 .line-3{
@@ -60,7 +74,8 @@
     border-width: 2px;
     border-color: #05386b;
     width: 100%;
-    animation: line2 2s linear infinite;
+    animation: line2 2s linear;
+    opacity: 0;
 }
 
   .line-4{
@@ -88,7 +103,8 @@
     border-width: 3px;
     border-color: #05386b;
     width: 100%;
-    animation: line2 3s linear infinite
+    animation: line2 3s linear;
+    opacity: 0;
  }
 
   .line-7{
@@ -98,7 +114,6 @@
     border-width: 3px;
     border-color: #05386b;
     width: 100%;
-    /* animation: line3 1s linear infinite */
 }
   .line-8{
     position: fixed;
@@ -107,7 +122,6 @@
     border-width: 3px;
     border-color: #05386b;
     width: 100%;
-    /* animation: line3 1s linear infinite */
 }
   .line-9{
     position: fixed;
@@ -116,7 +130,8 @@
     border-width: 3px;
     border-color: #05386b;
     width: 100%;
-    animation: line1 3s linear infinite
+    animation: line1 3s linear;
+    opacity: 0;
 }
 .note-1{
   color: #05386b;

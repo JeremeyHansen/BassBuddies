@@ -4,7 +4,7 @@ export default function Navbar(){
         <>
             <ul>
                 <div className="title">
-                    BassBuddy.
+                    BassBuddy<span>.</span>
                 </div>
             </ul>
         </>
