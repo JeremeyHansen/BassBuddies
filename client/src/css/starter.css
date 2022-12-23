@@ -133,60 +133,6 @@
     animation: line1 3s linear;
     opacity: 0;
 }
-.note-1{
-  color: #05386b;
-  position: absolute;
-  margin-right: 80%;
-  font-size: 2rem;
-}
-.note-2{
-  color: #05386b;
-  position: absolute;
-  margin-right: 90%;
-  margin-top: 40px;
-  font-size: 2rem;
-}
-.note2-2{
-  color: #05386b;
-  position: absolute;
-  margin-right: 70%;
-  margin-top: 60px;
-  font-size: 2rem;
-}
-.note2-1{
-  color: #05386b;
-  position: absolute;
-  margin-right: 95%;
-  margin-bottom: 60px;
-  font-size: 2rem;
-}
-.note2-3{
-  color: #05386b;
-  position: absolute;
-  margin-left: 95%;
-  margin-bottom: 60px;
-  font-size: 2rem;
-}
-.note2-4{
-  color: #05386b;
-  position: absolute;
-  margin-left: 70%;
-  margin-top: 60px;
-  font-size: 2rem;
-}
-.note-3{
-  color: #05386b;
-  position: absolute;
-  margin-left: 80%;
-  font-size: 2rem;
-}
-.note-4{
-  color: #05386b;
-  position: absolute;
-  margin-left: 90%;
-  margin-top: 40px;
-  font-size: 2rem;
-}
 .note-5{
   color: #05386b;
   position: absolute;
@@ -195,7 +141,7 @@
   font-size: 2rem;
   opacity: 0;
   -webkit-filter: blur(2px);
-  animation: notefall 2s linear infinite;
+  animation: notefall 2.1s linear infinite;
 }
 .note2-5{
   color: #05386b;
@@ -205,7 +151,7 @@
   font-size: 2rem;
   opacity: 0;
 
-  animation: notefall2 3s linear infinite;
+  animation: notefall2 3.1s linear infinite;
   -webkit-filter: blur(1px);
 }
 .note-6{
@@ -227,7 +173,7 @@
 
   top:0;
   font-size: 2rem;
-  animation: notefall3 1.5s linear infinite;
+  animation: notefall3 1.75s linear infinite;
   -webkit-filter: blur(1px);
 }
 .note-7{
@@ -236,7 +182,7 @@
   margin-left: 50%;
   top:0;
   font-size: 2.4rem;
-  animation: notefall2 3s linear infinite;
+  animation: notefall2 3.1s linear infinite;
   -webkit-filter: blur(1px);
   opacity: 0;
 
@@ -260,7 +206,7 @@
   opacity: 0;
 
   font-size: 3rem;
-  animation: notefall2 2.5s linear infinite;
+  animation: notefall2 2.6s linear infinite;
 }
 .note2-8{
   color: #05386b;
@@ -270,7 +216,7 @@
   margin-left: 30%;
   top:0;
   font-size: 2.2rem;
-  animation: notefall3 3s linear infinite;
+  animation: notefall3 2.2s linear infinite;
 
 }
 @keyframes notefall {
