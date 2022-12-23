@@ -1,7 +1,8 @@
-export default function Home(){
-    return (
-        <>
-            <h1>Home</h1>
-        </>
-    )
+import { BsMusicNote, BsMusicNoteBeamed } from "react-icons/bs";
+
+export default function Home() {
+  return (
+    <div>
+    </div>
+  );
 }
