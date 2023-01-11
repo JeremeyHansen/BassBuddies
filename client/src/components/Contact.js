@@ -33,7 +33,7 @@ export default function Contact(){
   
     return (
       <div className="contact-container">
-          <h1 class="animate__animated animate__rubberBand">Submit A Show In Your Area</h1>        
+          <h1>Submit A Show In Your Area</h1>        
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
         <label>Venue</label>
         <input type="text" name="from_name" placeholder="Venue Name" value={name} onChange={(e) => {setName(e.target.value)}}/>
