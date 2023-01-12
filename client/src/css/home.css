@@ -44,7 +44,7 @@
 .home-line1 {
   border-style: solid;
   border-color: #05386b;
-  border-width: 0 0 5px 0;
+  border-width: 0 0 3px 0;
   margin-top: 10%;
   transform: rotate(55deg);
   transform-origin: left;
@@ -61,9 +61,31 @@
 .home-line3 {
     border-style: solid;
     border-color: #05386b;
-    border-width: 0 0 5px 0;
+    border-width: 0 0 7px 0;
     transform: rotate(-25deg);
     transform-origin: right;
+}
+.home-line4 {
+    border-style: solid;
+    border-color: #5cdb95;
+    border-width: 0 0 5px 0;
+    transform: rotate(-25deg);
+    transform-origin: left;
+}
+.home-line5 {
+    border-style: solid;
+    border-color: #5cdb95;
+    border-width: 0 0 2px 0;
+    transform: rotate(25deg);
+    transform-origin: left;
+}
+.home-line6 {
+    border-style: solid;
+    border-color: #05386b;
+    border-width: 0 0 2px 0;
+    transform: rotate(35deg);
+    transform-origin: left;
+    margin-top: 10%;
 }
 
 .home-text {

@@ -2,7 +2,279 @@
     width: 50%;
     text-align: center;
     padding: 10px;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-left: 25%;
     font-family: monospace;
 }
+
+.cities-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.west-cities{
+    margin-top: 80px;
+    width: 50%;
+    border-style: solid;
+    border-width: 0 2px;
+    border-color: #05386b;
+}
+
+.east-cities{
+    margin-top: 80px;
+    width: 50%;
+}
+
+.city{
+    text-decoration: none;
+    color: #05386b
+
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    color: #05386b;
+    font-size: 1.5rem;
+}
+.title2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #5cdb95;
+    text-transform: uppercase;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.city-title{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #05386b;
+    border-radius: 10px;
+    background-color: #5cdb95;
+    color: #edf5e1;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.west-cities h1{
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.east-cities h1{
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+
+}
+
+.west-cities div{
+    display: grid;
+    text-align: center;
+}
+
+.east-cities div{
+    display: grid;
+    text-align: center;
+}
+
+.underline {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .underline:hover{
+    cursor: pointer;
+  }
+  
+  .underline:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #da7474;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .underline:hover:before,
+  .underline:focus:before,
+  .underline:active:before {
+    left: 0;
+  }
+
+  .underline1 {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .underline1:hover{
+    cursor: pointer;
+  }
+  
+  .underline1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #deb773;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .underline1:hover:before,
+  .underline1:focus:before,
+  .underline1:active:before {
+    left: 0;
+  }
+
+  .underline2 {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .underline2:hover{
+    cursor: pointer;
+  }
+  
+  .underline2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #ffff7d;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .underline2:hover:before,
+  .underline2:focus:before,
+  .underline2:active:before {
+    left: 0;
+  }
+
+  .underline3 {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .underline3:hover{
+    cursor: pointer;
+  }
+  
+  .underline3:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #5cdb95;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .underline3:hover:before,
+  .underline3:focus:before,
+  .underline3:active:before {
+    left: 0;
+  }
+
+  .underline4 {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .underline4:hover{
+    cursor: pointer;
+  }
+  
+  .underline4:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #05386b;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .underline4:hover:before,
+  .underline4:focus:before,
+  .underline4:active:before {
+    left: 0;
+  }
