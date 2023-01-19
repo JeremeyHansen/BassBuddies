@@ -1,0 +1,94 @@
+.card-container{
+    width: 75%;
+    justify-content: center;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.concert-card {
+  height: 200px;
+  background-color: aliceblue;
+  padding: 15px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #5cdb95;
+  border-width: 3px;
+  transition: .2s linear;
+  font-family: monospace;
+}
+
+.concert-card:hover {
+  color: white;
+  background-color: #05386b;
+  box-shadow: 0 0 10px #5cdb95;
+  box-shadow: 0 0 20px #5cdb95;
+  box-shadow: 0 0 50px #5cdb95;
+
+}
+.card-contents {
+  display: flex;
+}
+
+.card-venue{
+    border: rgb(255, 255, 255) solid 2px;
+    background-color: #5cdb95;
+    border-radius: 15px;
+    color: white;
+    padding-left: 25px;
+}
+
+.card-text span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-text button{
+    border-style: none;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #05386b;
+    border-radius: 5px;
+    border-color:#5cdb95;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: .2s linear;
+}
+
+.card-text button:hover{
+    background-color: #5cdb95;
+    box-shadow: 0 0 10px #5cdb95;
+    color: #05386b;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.link:hover{
+    color: #05386b;
+}
+
+
+
+.concert-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.img-container {
+  position: absolute;
+  right: 0;
+  margin-right: 150px;
+}

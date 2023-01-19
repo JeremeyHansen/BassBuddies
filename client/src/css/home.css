@@ -102,3 +102,14 @@
   padding: 15px;
   color: #05386b;
 }
+
+.tabs{
+  background-color: lightgreen;
+  color: white;
+  padding: 20px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  align: left;
+}
+
