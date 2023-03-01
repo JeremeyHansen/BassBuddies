@@ -29,6 +29,8 @@
 }
 .card-contents {
   display: flex;
+  overflow: scroll;
+
 }
 
 .card-venue{
@@ -91,4 +93,23 @@
   position: absolute;
   right: 0;
   margin-right: 150px;
+}
+
+.artist-container{
+  display:  -webkit-box;
+}
+
+.artist-container h2{
+  padding-left: 10px;
+  height: 20px;
+}
+
+.artist-music-note{
+  color: #5cdb95;
+}
+
+.artist-title{
+  color: #5cdb95;
+  text-transform: uppercase;
+
 }
