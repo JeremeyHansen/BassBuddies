@@ -1,401 +1,503 @@
 @media only screen and (max-width: 2000px) {
-  .city-search{
-      width: 50%;
-      text-align: center;
-      padding: 10px;
-      margin-top: 5%;
-      margin-left: 25%;
-      font-family: monospace;
+  .city-music-container{
+    display: none
   }
-  
-  .cities-container{
-      display: flex;
-      justify-content: center;
-      text-align: center;
+  .city-search {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5%;
+    margin-left: 25%;
+    font-family: monospace;
   }
-  
-  .west-cities{
-      margin-top: 80px;
-      width: 50%;
-      border-style: solid;
-      border-width: 0 2px;
-      border-color: #05386b;
+
+  .cities-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
-  
-  .east-cities{
-      margin-top: 80px;
-      width: 50%;
+
+  .west-cities {
+    margin-top: 80px;
+    width: 50%;
+    border-style: solid;
+    border-width: 0 2px;
+    border-color: #05386b;
   }
-  
-  .city{
-      text-decoration: none;
-      color: #05386b
-  
+
+  .east-cities {
+    margin-top: 80px;
+    width: 50%;
   }
-  
-  .title{
-      text-align: center;
-      text-transform: uppercase;
-      font-family: 'Courier New', Courier, monospace;
-      color: #05386b;
-      font-size: 1.5rem;
+
+  .city {
+    text-decoration: none;
+    color: #05386b;
   }
-  .title2{
-      text-align: center;
-      font-family: 'Courier New', Courier, monospace;
-      color: #5cdb95;
-      text-transform: uppercase;
-      font-size: larger;
-      text-decoration: underline;
+
+  .title {
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Courier New", Courier, monospace;
+    color: #05386b;
+    font-size: 1.5rem;
   }
-  
-  .city-title{
-      border-style: solid;
-      border-width: 2px;
-      border-color: #05386b;
-      border-radius: 10px;
-      background-color: #5cdb95;
-      color: #edf5e1;
-      margin-left: 20%;
-      margin-right: 20%;
+  .title2 {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    color: #5cdb95;
+    text-transform: uppercase;
+    font-size: larger;
+    text-decoration: underline;
   }
-  
-  .west-cities h1{
-      text-decoration: underline;
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bold;
-      text-transform: uppercase;
+
+  .city-title {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #05386b;
+    border-radius: 10px;
+    background-color: #5cdb95;
+    color: #edf5e1;
+    margin-left: 20%;
+    margin-right: 20%;
   }
-  
-  .east-cities h1{
-      text-decoration: underline;
-      font-family: 'Courier New', Courier, monospace;
-      font-family: 'Courier New', Courier, monospace;
-      text-transform: uppercase;
-  
+
+  .west-cities h1 {
+    text-decoration: underline;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
   }
-  
-  .west-cities div{
-      display: grid;
-      text-align: center;
+
+  .east-cities h1 {
+    text-decoration: underline;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
   }
-  
-  .east-cities div{
-      display: grid;
-      text-align: center;
+
+  .city-desktop-container{
+    margin-top: 30px;
   }
-  
+
+  .city-desktop-container h2{
+    margin-top: 20px;
+  }
+
+  .west-cities div {
+    display: grid;
+    text-align: center;
+  }
+
+  .east-cities div {
+    display: grid;
+    text-align: center;
+  }
+
   .CA {
-      display: inline-block;
-      font-family: 'Courier New', Courier, monospace;
-      vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      position: relative;
-      overflow: hidden;
-      padding: 2px;
-      color: #05386b;
-    }
-  
-    .CA:hover{
-      cursor: pointer;
-    }
-    
-    .CA:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 100%;
-      right: 0;
-      bottom: 0;
-      background: #da7474;
-      height: 4px;
-      -webkit-transition-property: left;
-      transition-property: left;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-    .CA:hover:before,
-    .CA:focus:before,
-    .CA:active:before {
-      left: 0;
-    }
-    .GA {
-      display: inline-block;
-      font-family: 'Courier New', Courier, monospace;
-      vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      position: relative;
-      overflow: hidden;
-      padding: 2px;
-      color: #05386b;
-    }
-  
-    .GA:hover{
-      cursor: pointer;
-    }
-    
-    .GA:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 100%;
-      right: 0;
-      bottom: 0;
-      background: #da7474;
-      height: 4px;
-      -webkit-transition-property: left;
-      transition-property: left;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-    .GA:hover:before,
-    .GA:focus:before,
-    .GA:active:before {
-      left: 0;
-    }
-  
-    .CO {
-      display: inline-block;
-      font-family: 'Courier New', Courier, monospace;
-      vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      position: relative;
-      overflow: hidden;
-      padding: 2px;
-      color: #05386b;
-    }
-  
-    .CO:hover{
-      cursor: pointer;
-    }
-    
-    .CO:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 100%;
-      right: 0;
-      bottom: 0;
-      background: #deb773;
-      height: 4px;
-      -webkit-transition-property: left;
-      transition-property: left;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-    .CO:hover:before,
-    .CO:focus:before,
-    .CO:active:before {
-      left: 0;
-    }
-  
-    .IL {
-      display: inline-block;
-      font-family: 'Courier New', Courier, monospace;
-      vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      position: relative;
-      overflow: hidden;
-      padding: 2px;
-      color: #05386b;
-    }
-  
-    .IL:hover{
-      cursor: pointer;
-    }
-    
-    .IL:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 100%;
-      right: 0;
-      bottom: 0;
-      background: #deb773;
-      height: 4px;
-      -webkit-transition-property: left;
-      transition-property: left;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-    .IL:hover:before,
-    .IL:focus:before,
-    .IL:active:before {
-      left: 0;
-    }
-  
-    .WA {
-      display: inline-block;
-      font-family: 'Courier New', Courier, monospace;
-      vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      position: relative;
-      overflow: hidden;
-      padding: 2px;
-      color: #05386b;
-    }
-  
-    .WA:hover{
-      cursor: pointer;
-    }
-    
-    .WA:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 100%;
-      right: 0;
-      bottom: 0;
-      background: #ffff7d;
-      height: 4px;
-      -webkit-transition-property: left;
-      transition-property: left;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-    .WA:hover:before,
-    .WA:focus:before,
-    .WA:active:before {
-      left: 0;
-    }
-    .NC {
-      display: inline-block;
-      font-family: 'Courier New', Courier, monospace;
-      vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      position: relative;
-      overflow: hidden;
-      padding: 2px;
-      color: #05386b;
-    }
-  
-    .NC:hover{
-      cursor: pointer;
-    }
-    
-    .NC:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 100%;
-      right: 0;
-      bottom: 0;
-      background: #ffff7d;
-      height: 4px;
-      -webkit-transition-property: left;
-      transition-property: left;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-    .NC:hover:before,
-    .NC:focus:before,
-    .NC:active:before {
-      left: 0;
-    }
-  
-    .FL {
-      display: inline-block;
-      font-family: 'Courier New', Courier, monospace;
-      vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      position: relative;
-      overflow: hidden;
-      padding: 2px;
-      color: #05386b;
-    }
-  
-    .FL:hover{
-      cursor: pointer;
-    }
-    
-    .FL:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 100%;
-      right: 0;
-      bottom: 0;
-      background: #5cdb95;
-      height: 4px;
-      -webkit-transition-property: left;
-      transition-property: left;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-    .FL:hover:before,
-    .FL:focus:before,
-    .FL:active:before {
-      left: 0;
-    }
-  
-    .NY {
-      display: inline-block;
-      font-family: 'Courier New', Courier, monospace;
-      vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      position: relative;
-      overflow: hidden;
-      padding: 2px;
-      color: #05386b;
-    }
-  
-    .NY:hover{
-      cursor: pointer;
-    }
-    
-    .NY:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 100%;
-      right: 0;
-      bottom: 0;
-      background: #05386b;
-      height: 4px;
-      -webkit-transition-property: left;
-      transition-property: left;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-    .NY:hover:before,
-    .NY:focus:before,
-    .NY:active:before {
-      left: 0;
-    }
+    display: inline-block;
+    font-family: "Courier New", Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .CA:hover {
+    cursor: pointer;
+  }
+
+  .CA:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #da7474;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .CA:hover:before,
+  .CA:focus:before,
+  .CA:active:before {
+    left: 0;
+  }
+  .GA {
+    display: inline-block;
+    font-family: "Courier New", Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .GA:hover {
+    cursor: pointer;
+  }
+
+  .GA:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #da7474;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .GA:hover:before,
+  .GA:focus:before,
+  .GA:active:before {
+    left: 0;
+  }
+
+  .CO {
+    display: inline-block;
+    font-family: "Courier New", Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .CO:hover {
+    cursor: pointer;
+  }
+
+  .CO:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #deb773;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .CO:hover:before,
+  .CO:focus:before,
+  .CO:active:before {
+    left: 0;
+  }
+
+  .IL {
+    display: inline-block;
+    font-family: "Courier New", Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .IL:hover {
+    cursor: pointer;
+  }
+
+  .IL:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #deb773;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .IL:hover:before,
+  .IL:focus:before,
+  .IL:active:before {
+    left: 0;
+  }
+
+  .WA {
+    display: inline-block;
+    font-family: "Courier New", Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .WA:hover {
+    cursor: pointer;
+  }
+
+  .WA:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #ffff7d;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .WA:hover:before,
+  .WA:focus:before,
+  .WA:active:before {
+    left: 0;
+  }
+  .NC {
+    display: inline-block;
+    font-family: "Courier New", Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .NC:hover {
+    cursor: pointer;
+  }
+
+  .NC:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #ffff7d;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .NC:hover:before,
+  .NC:focus:before,
+  .NC:active:before {
+    left: 0;
+  }
+
+  .FL {
+    display: inline-block;
+    font-family: "Courier New", Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .FL:hover {
+    cursor: pointer;
+  }
+
+  .FL:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #5cdb95;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .FL:hover:before,
+  .FL:focus:before,
+  .FL:active:before {
+    left: 0;
+  }
+
+  .NY {
+    display: inline-block;
+    font-family: "Courier New", Courier, monospace;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    color: #05386b;
+  }
+
+  .NY:hover {
+    cursor: pointer;
+  }
+
+  .NY:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #05386b;
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .NY:hover:before,
+  .NY:focus:before,
+  .NY:active:before {
+    left: 0;
+  }
+  .cities-mobile-container {
+    display: none;
+  }
 }
 
-  @media only screen and (max-width: 480px) {
-  
+@media only screen and (max-width: 480px) {
+  .cities-container {
+    display: none;
   }
+  .cities-mobile-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .button-container {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .button-container1 {
+    margin-top: 110px;
+    display: grid;
+    justify-content: space-around;
+  }
+  .button-container1 button{
+    margin-bottom: 35px;
+    padding: 70px;
+    background-color: rgb(5, 56, 107, .5);
+  }
+
+  .mobile-city-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .mobile-city {
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 25px;
+  }
+  .active-city {
+    background-color: #5cdb95;
+    border-style: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #ffffff;
+    padding: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-transform: uppercase;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 1.3rem;
+    box-shadow: #5cdb95 0 0 20px;
+    color: white;
+  }
+  .city-button {
+    /* box-shadow:  #5cdb95 0 0 20px; */
+    border-style: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #5cdb95;
+    color: #ffffff;
+    background-color: #05386b;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+  }
+  .city-button-gone{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50%;
+    border-style: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #5cdb95;
+    color: #ffffff;
+    background-color: #05386b;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+  }
+  .city-music-container{
+    display: contents
+  }
+  .pre-button-container{
+    display: none;
+  }
+}

@@ -1,7 +1,9 @@
 import "../css/concertcard.css";
 import { BsMusicNote } from "react-icons/bs";
 
+
 export default function ConcertCard({ concert }) {
+
   return (
     <div className="concert-card">
       <div className="card-venue">
@@ -12,15 +14,15 @@ export default function ConcertCard({ concert }) {
           <div className="artist-container">
           <h2 className="artist-title">{concert.artistList.length > 1 ? "Artists: " : "Artist: "}</h2>
           {concert.artistList.map((art) => {
-            return <h2 key={art.id}><BsMusicNote className="artist-music-note"/> {art.name} {" "}</h2>
+            return <h2 key={art.id} className="artist-list">&nbsp;{art.name} <BsMusicNote className="artist-music-note"/></h2>
           })}
           </div>
           <p>
             <span>Address: </span>
             {concert.venue.address}
           </p>
-          <p>
-            <span>Date: </span>
+          <p className="mobile-date">
+            <span className="date">Date: </span>
             {concert.date}
           </p>
           <button variant="primary">

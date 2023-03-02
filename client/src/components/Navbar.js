@@ -5,9 +5,9 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="nav-title">
-        BassBuddy<span>.</span>
+        <span className="site-title">BassBuddy</span><span className="period">.</span>
       </Link>
-      <ul className="" nav>
+      <ul className="">
         <CustomLink to="/cities">Cities</CustomLink>
         <CustomLink to="/contact">Submit</CustomLink>
       </ul>

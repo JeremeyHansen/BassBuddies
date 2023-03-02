@@ -6,6 +6,8 @@ import Home from './components/Home.js'
 import Cities from './components/Cities.js'
 import Contact from './components/Contact.js'
 import City from './components/City.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 

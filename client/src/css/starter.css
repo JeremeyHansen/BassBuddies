@@ -1,6 +1,6 @@
 @media only screen and (max-width: 2000px) {
   .start-title-lit {
-    color: #EDF5E1;
+    color: #edf5e1;
     text-transform: uppercase;
     font-size: 10rem;
     position: absolute;
@@ -16,7 +16,7 @@
     background-color: #5cdb95;
     z-index: 2;
   }
-  .line-1{
+  .line-1 {
     position: fixed;
     border-style: solid;
     border-width: 1px;
@@ -24,14 +24,13 @@
     width: 100%;
     animation: line1 2s linear;
     opacity: 0;
-
-}
-@keyframes line1 {
+  }
+  @keyframes line1 {
     0% {
       margin-right: 0;
       opacity: 0;
     }
-  
+
     1% {
       opacity: 100%;
     }
@@ -41,7 +40,7 @@
       margin-right: 220%;
     }
   }
-  .line-2{
+  .line-2 {
     position: fixed;
     margin-top: 25px;
     border-style: solid;
@@ -50,24 +49,22 @@
     width: 100%;
     animation: line2 2s linear;
     opacity: 0;
-
-}
-@keyframes line2 {
+  }
+  @keyframes line2 {
     0% {
       margin-left: 0%;
       opacity: 0;
     }
-  
+
     1% {
       opacity: 100%;
     }
     100% {
       margin-left: 220%;
       opacity: 100%;
-
     }
   }
-.line-3{
+  .line-3 {
     position: fixed;
     border-style: solid;
     margin-bottom: 25px;
@@ -76,9 +73,9 @@
     width: 100%;
     animation: line2 2s linear;
     opacity: 0;
-}
+  }
 
-  .line-4{
+  .line-4 {
     position: fixed;
     border-style: solid;
     margin-bottom: 65px;
@@ -86,8 +83,8 @@
     border-color: #05386b;
     width: 100%;
     /* animation: line3 1s linear infinite */
-}
-  .line-5{
+  }
+  .line-5 {
     position: fixed;
     border-style: solid;
     margin-top: 65px;
@@ -95,8 +92,8 @@
     border-color: #05386b;
     width: 100%;
     /* animation: line3 1s linear infinite */
-}
-  .line-6{
+  }
+  .line-6 {
     position: fixed;
     border-style: solid;
     margin-top: 225px;
@@ -105,25 +102,25 @@
     width: 100%;
     animation: line2 3s linear;
     opacity: 0;
- }
+  }
 
-  .line-7{
+  .line-7 {
     position: fixed;
     border-style: solid;
     margin-bottom: 125px;
     border-width: 3px;
     border-color: #05386b;
     width: 100%;
-}
-  .line-8{
+  }
+  .line-8 {
     position: fixed;
     border-style: solid;
     margin-top: 140px;
     border-width: 3px;
     border-color: #05386b;
     width: 100%;
-}
-  .line-9{
+  }
+  .line-9 {
     position: fixed;
     border-style: solid;
     margin-bottom: 225px;
@@ -132,138 +129,470 @@
     width: 100%;
     animation: line1 3s linear;
     opacity: 0;
-}
-.note-5{
-  color: #05386b;
-  position: absolute;
-  margin-left: 90%;
-  top: 0;
-  font-size: 2rem;
-  opacity: 0;
-  -webkit-filter: blur(2px);
-  animation: notefall 2.1s linear infinite;
-}
-.note2-5{
-  color: #05386b;
-  position: absolute;
-  margin-right: 90%;
-  top:0;
-  font-size: 2rem;
-  opacity: 0;
+  }
+  .note-5 {
+    color: #05386b;
+    position: absolute;
+    margin-left: 90%;
+    top: 0;
+    font-size: 2rem;
+    opacity: 0;
+    z-index: -1;
 
-  animation: notefall2 3.1s linear infinite;
-  -webkit-filter: blur(1px);
-}
-.note-6{
-  color: #05386b;
-  position: absolute;
-  margin-right: 70%;
-  top:0;
-  font-size: 1.5rem;
-  opacity: 0;
+    -webkit-filter: blur(2px);
+    animation: notefall 2.1s linear infinite;
+  }
+  .note2-5 {
+    color: #05386b;
+    position: absolute;
+    margin-right: 90%;
+    top: 0;
+    z-index: -1;
 
-  animation: notefall3 1.5s linear infinite;
-  -webkit-filter: blur(2px);
-}
-.note2-6{
-  color: #05386b;
-  position: absolute;
-  margin-left: 70%;
-  opacity: 0;
+    font-size: 2rem;
+    opacity: 0;
 
-  top:0;
-  font-size: 2rem;
-  animation: notefall3 1.75s linear infinite;
-  -webkit-filter: blur(1px);
-}
-.note-7{
-  color: #05386b;
-  position: absolute;
-  margin-left: 50%;
-  top:0;
-  font-size: 2.4rem;
-  animation: notefall2 3.1s linear infinite;
-  -webkit-filter: blur(1px);
-  opacity: 0;
+    animation: notefall2 3.1s linear infinite;
+    -webkit-filter: blur(1px);
+  }
+  .note-6 {
+    color: #05386b;
+    position: absolute;
+    margin-right: 70%;
+    top: 0;
+    z-index: -1;
 
-}
-.note2-7{
-  color: #05386b;
-  position: absolute;
-  margin-right: 50%;
-  opacity: 0;
+    font-size: 1.5rem;
+    opacity: 0;
 
-  top:0;
-  font-size: 2rem;
-  -webkit-filter: blur(3px);
-  animation: notefall 2s linear infinite;
-}
-.note-8{
-  color: #05386b;
-  position: absolute;
-  margin-right: 30%;
-  top:0;
-  opacity: 0;
+    animation: notefall3 1.5s linear infinite;
+    -webkit-filter: blur(2px);
+  }
+  .note2-6 {
+    color: #05386b;
+    position: absolute;
+    margin-left: 70%;
+    z-index: -1;
 
-  font-size: 3rem;
-  animation: notefall2 2.6s linear infinite;
-}
-.note2-8{
-  color: #05386b;
-  position: absolute;
-  opacity: 0;
+    opacity: 0;
 
-  margin-left: 30%;
-  top:0;
-  font-size: 2.2rem;
-  animation: notefall3 2.2s linear infinite;
-
-}
-@keyframes notefall {
-  0% {
-    margin-top: -10%;
+    top: 0;
+    font-size: 2rem;
+    animation: notefall3 1.75s linear infinite;
+    -webkit-filter: blur(1px);
+  }
+  .note-7 {
+    color: #05386b;
+    position: absolute;
+    margin-left: 50%;
+    z-index: -1;
+    top: 0;
+    font-size: 2.4rem;
+    animation: notefall2 3.1s linear infinite;
+    -webkit-filter: blur(1px);
     opacity: 0;
   }
-
-  5% {
-    opacity: 100%;
-  }
-
-  100% {
-    margin-top: 100%;
-  }
-}
-@keyframes notefall2 {
-  0% {
-    margin-top: -10%;
+  .note-8 {
+    color: #5cdb95;
+    position: absolute;
+    margin-left: 20%;
+    z-index: -1;
+    top: 0;
+    font-size: 2.4rem;
+    animation: notefall2 3.1s linear infinite;
+    -webkit-filter: blur(1px);
     opacity: 0;
   }
-
-  5% {
-    opacity: 100%;
-  }
-
-  100% {
-    margin-top: 100%;
-  }
-}
-@keyframes notefall3 {
-  0% {
-    margin-top: -10%;
+  .note-9 {
+    color: #5cdb95;
+    position: absolute;
+    margin-left: 77%;
+    z-index: -1;
+    top: 0;
+    font-size: 3.4rem;
+    animation: notefall2 2.4s linear infinite;
+    -webkit-filter: blur(1px);
     opacity: 0;
   }
-
-  5% {
-    opacity: 100%;
+  .note-10 {
+    color: #5cdb95;
+    position: absolute;
+    margin-left: 37%;
+    z-index: -1;
+    top: 0;
+    font-size: 2.4rem;
+    animation: notefall2 3.1s linear infinite;
+    -webkit-filter: blur(1px);
+    opacity: 0;
   }
+  .note2-7 {
+    color: #05386b;
+    position: absolute;
+    margin-right: 50%;
+    z-index: -1;
 
-  100% {
-    margin-top: 100%;
+    opacity: 0;
+
+    top: 0;
+    font-size: 2rem;
+    -webkit-filter: blur(3px);
+    animation: notefall 2s linear infinite;
   }
-}
+  .note2-8 {
+    color: #5cdb95;
+    position: absolute;
+    margin-left: 63%;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    font-size: 2rem;
+    -webkit-filter: blur(3px);
+    animation: notefall 2s linear infinite;
+  }
+  .note2-9 {
+    color: #5cdb95;
+    position: absolute;
+    margin-left: 10%;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    font-size: 5rem;
+    -webkit-filter: blur(3px);
+    animation: notefall 2s linear infinite;
+  }
+  .note2-10 {
+    color: #5cdb95;
+    position: absolute;
+    margin-left: 80%;
+    z-index: -1;
+
+    opacity: 0;
+
+    top: 0;
+    font-size: 2rem;
+    -webkit-filter: blur(3px);
+    animation: notefall 2s linear infinite;
+  }
+  .note-8 {
+    color: #05386b;
+    position: absolute;
+    z-index: -1;
+
+    margin-right: 30%;
+    top: 0;
+    opacity: 0;
+
+    font-size: 3rem;
+    animation: notefall2 2.6s linear infinite;
+  }
+  .note2-8 {
+    color: #05386b;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+
+    margin-left: 30%;
+    top: 0;
+    font-size: 2.2rem;
+    animation: notefall3 2.2s linear infinite;
+  }
+  @keyframes notefall {
+    0% {
+      margin-top: -10%;
+      opacity: 0;
+    }
+
+    5% {
+      opacity: 100%;
+    }
+
+    100% {
+      margin-top: 100%;
+    }
+  }
+  @keyframes notefall2 {
+    0% {
+      margin-top: -10%;
+      opacity: 0;
+    }
+
+    5% {
+      opacity: 100%;
+    }
+
+    100% {
+      margin-top: 100%;
+    }
+  }
+  @keyframes notefall3 {
+    0% {
+      margin-top: -10%;
+      opacity: 0;
+    }
+
+    5% {
+      opacity: 100%;
+    }
+
+    100% {
+      margin-top: 100%;
+    }
+  }
 }
 @media only screen and (max-width: 750px) {
+  .note-10 {
+    display: none;
+  }
   .start-title-lit {
+    font-size: 2.5rem;
+  }
+  .line-1 {
+    position: fixed;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #05386b;
+    width: 100%;
+    animation: line1 2s linear;
+    opacity: 0;
+  }
+  @keyframes line1 {
+    0% {
+      margin-right: 0;
+      opacity: 0;
+    }
+
+    1% {
+      opacity: 100%;
+    }
+
+    100% {
+      opacity: 100%;
+      margin-right: 220%;
+    }
+  }
+  .line-2 {
+    position: fixed;
+    margin-top: 25px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #05386b;
+    width: 100%;
+    animation: line2 2s linear;
+    opacity: 0;
+  }
+  @keyframes line2 {
+    0% {
+      margin-left: 0%;
+      opacity: 0;
+    }
+
+    1% {
+      opacity: 100%;
+    }
+    100% {
+      margin-left: 220%;
+      opacity: 100%;
+    }
+  }
+  .line-3 {
+    position: fixed;
+    border-style: solid;
+    margin-bottom: 25px;
+    border-width: 1.5px;
+    border-color: #05386b;
+    width: 100%;
+    animation: line2 2s linear;
+    opacity: 0;
+  }
+
+  .line-4 {
+    position: fixed;
+    border-style: solid;
+    margin-bottom: 65px;
+    border-width: 2px;
+    border-color: #05386b;
+    width: 100%;
+    /* animation: line3 1s linear infinite */
+  }
+  .line-5 {
+    position: fixed;
+    border-style: solid;
+    margin-top: 65px;
+    border-width: 2px;
+    border-color: #05386b;
+    width: 100%;
+    /* animation: line3 1s linear infinite */
+  }
+  .line-6 {
+    position: fixed;
+    border-style: solid;
+    margin-top: 225px;
+    border-width: 2.5px;
+    border-color: #05386b;
+    width: 100%;
+    animation: line2 3s linear;
+    opacity: 0;
+  }
+
+  .line-7 {
+    position: fixed;
+    border-style: solid;
+    margin-bottom: 125px;
+    border-width: 1.5px;
+    border-color: #05386b;
+    width: 100%;
+  }
+  .line-8 {
+    position: fixed;
+    border-style: solid;
+    margin-top: 140px;
+    border-width: 1.5px;
+    border-color: #05386b;
+    width: 100%;
+  }
+  .line-9 {
+    position: fixed;
+    border-style: solid;
+    margin-bottom: 225px;
+    border-width: 2px;
+    border-color: #05386b;
+    width: 100%;
+    animation: line1 3s linear;
+    opacity: 0;
+  }
+  .note-5 {
+    color: #05386b;
+    position: absolute;
+    margin-left: 90%;
+    top: 0;
+    font-size: 1rem;
+    opacity: 0;
+    z-index: -1;
+
+    -webkit-filter: blur(2px);
+    animation: notefall 0.7s linear infinite;
+  }
+  .note2-5 {
+    color: #05386b;
+    position: absolute;
+    margin-right: 90%;
+    top: 0;
+    font-size: 1.2rem;
+    opacity: 0;
+    z-index: -1;
+    animation: notefall2 1s linear infinite;
+    -webkit-filter: blur(1px);
+  }
+  .note-6 {
+    color: #05386b;
+    position: absolute;
+    margin-right: 70%;
+    top: 0;
+    z-index: -1;
+
+    font-size: 1rem;
+    opacity: 0;
+
+    animation: notefall3 1.5s linear infinite;
+    -webkit-filter: blur(2px);
+  }
+  .note2-6 {
+    color: #05386b;
+    position: absolute;
+    margin-left: 70%;
+    opacity: 0;
+    z-index: -1;
+
+    top: 0;
+    font-size: 0.8rem;
+    animation: notefall3 1.75s linear infinite;
+    -webkit-filter: blur(1px);
+  }
+  .note-7 {
+    color: #05386b;
+    position: absolute;
+    margin-left: 50%;
+    top: 0;
     font-size: 1.5rem;
+    animation: notefall2 2.1s linear infinite;
+    -webkit-filter: blur(1px);
+    opacity: 0;
+    z-index: -1;
+  }
+  .note2-7 {
+    color: #05386b;
+    position: absolute;
+    margin-right: 50%;
+    opacity: 0;
+    z-index: -1;
+
+    top: 0;
+    font-size: 1.6rem;
+    -webkit-filter: blur(3px);
+    animation: notefall 1.2s linear infinite;
+  }
+  .note-8 {
+    color: #05386b;
+    position: absolute;
+    margin-right: 30%;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+
+    font-size: 1rem;
+    animation: notefall2 2s linear infinite;
+  }
+  .note2-8 {
+    color: #05386b;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+
+    margin-left: 30%;
+    top: 0;
+    font-size: 1.2rem;
+    animation: notefall3 1.2s linear infinite;
+  }
+  @keyframes notefall {
+    0% {
+      margin-top: -10%;
+      opacity: 0;
+    }
+
+    5% {
+      opacity: 100%;
+    }
+
+    100% {
+      margin-top: 100%;
+    }
+  }
+  @keyframes notefall2 {
+    0% {
+      margin-top: -10%;
+      opacity: 0;
+    }
+
+    5% {
+      opacity: 100%;
+    }
+
+    100% {
+      margin-top: 100%;
+    }
+  }
+  @keyframes notefall3 {
+    0% {
+      margin-top: -10%;
+      opacity: 0;
+    }
+
+    5% {
+      opacity: 100%;
+    }
+
+    100% {
+      margin-top: 100%;
+    }
   }
 }
