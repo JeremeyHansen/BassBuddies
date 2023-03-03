@@ -1,7 +1,10 @@
 import "../css/city.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { motion, AnimatePresence } from 'framer-motion'
 import { BsMusicNote, BsMusicNoteBeamed } from "react-icons/bs";
+import 'animate.css';
+
 
 export default function Cities() {
 
@@ -90,6 +93,9 @@ export default function Cities() {
     setButtonContainer("button-container")
   }
 
+  //animation setting
+  // const { scrollYProgress } = useScroll();
+
   return (
     <div>
       <div className="cities-container">
@@ -98,6 +104,8 @@ export default function Cities() {
             <h1>West Coast</h1>
           </div>
           <div className="city-desktop-container">
+          <motion.div layout>
+          <AnimatePresence>
             {westCities.map((city) => {
               return (
                 <h2 className={city.state} key={city.id}>
@@ -107,6 +115,8 @@ export default function Cities() {
                 </h2>
               );
             })}
+          </AnimatePresence>
+          </motion.div>
           </div>
         </div>
         <div className="east-cities">
@@ -114,6 +124,8 @@ export default function Cities() {
             <h1>East Coast</h1>
           </div>
           <div className="city-desktop-container">
+          <motion.div layout>
+          <AnimatePresence>
             {eastCities.map((city) => {
               return (
                 <h2 className={city.state} key={city.id}>
@@ -123,6 +135,8 @@ export default function Cities() {
                 </h2>
               );
             })}
+          </AnimatePresence>
+          </motion.div>
           </div>
         </div>
       </div>
@@ -136,6 +150,8 @@ export default function Cities() {
             </button>
         </div>
         <div className="mobile-city-container">
+        <motion.div layout>
+          <AnimatePresence>
           {citiesToDisplay.map((city) => {
             return (
               <h2 className="mobile-city" key={city.id}>
@@ -145,6 +161,8 @@ export default function Cities() {
               </h2>
             );
           })}
+          </AnimatePresence>
+          </motion.div>
         </div>
       </div>
       <div className="city-music-container">

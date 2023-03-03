@@ -1,6 +1,6 @@
 import "../css/starter.css";
 import { BsMusicNote, BsMusicNoteBeamed } from "react-icons/bs";
-import 'animate.css';
+// import 'animate.css';
 
 
 
