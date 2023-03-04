@@ -104,6 +104,9 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+  .hamburger{
+    display: contents;
+  }
   .nav {
     align-items: center;
     padding: none;
