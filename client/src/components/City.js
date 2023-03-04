@@ -3,10 +3,21 @@ import ConcertCard from "./ConcertCard.js";
 import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoSearchCircle } from "react-icons/io5";
+import ConcertLoadPage from "./ConcertLoadPage.js";
 
 export default function City() {
   const [concerts, setConcerts] = useState([]);
   const { state } = useLocation();
+
+  //loading page for concerts
+  const [className, setClassName] = useState("concert-load-container")
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setClassName('concert-load-gone')
+    }, 1000)
+    return () => clearTimeout(timer)
+  }, [])
 
   useEffect(() => {
     fetch(
@@ -41,6 +52,7 @@ const [searchIcon, setSearchIcon] = useState("search-icon");
 
   return (
     <div className="whole-container">
+      <ConcertLoadPage className={className}/>
       <h1 className="title">Hi, {state.city.city}!</h1>
       <h1 className="title2">
       <IoSearchCircle className={searchIcon} onClick={handleSearchIcon}/>
