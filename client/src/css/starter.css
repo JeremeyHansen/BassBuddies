@@ -354,6 +354,7 @@
     width: 100%;
     animation: line1 2s linear;
     opacity: 0;
+    display: none;
   }
   @keyframes line1 {
     0% {
@@ -378,7 +379,8 @@
     border-color: #05386b;
     width: 100%;
     animation: line2 2s linear;
-    opacity: 0;
+    opacity: 0;    display: none;
+
   }
   @keyframes line2 {
     0% {
@@ -402,7 +404,8 @@
     border-color: #05386b;
     width: 100%;
     animation: line2 2s linear;
-    opacity: 0;
+    opacity: 0;    display: none;
+
   }
 
   .line-4 {
@@ -411,7 +414,8 @@
     margin-bottom: 65px;
     border-width: 2px;
     border-color: #05386b;
-    width: 100%;
+    width: 100%;    display: none;
+
     /* animation: line3 1s linear infinite */
   }
   .line-5 {
@@ -420,7 +424,8 @@
     margin-top: 65px;
     border-width: 2px;
     border-color: #05386b;
-    width: 100%;
+    width: 100%;    display: none;
+
     /* animation: line3 1s linear infinite */
   }
   .line-6 {
@@ -431,7 +436,8 @@
     border-color: #05386b;
     width: 100%;
     animation: line2 3s linear;
-    opacity: 0;
+    opacity: 0;    display: none;
+
   }
 
   .line-7 {
@@ -440,7 +446,8 @@
     margin-bottom: 125px;
     border-width: 1.5px;
     border-color: #05386b;
-    width: 100%;
+    width: 100%;    display: none;
+
   }
   .line-8 {
     position: fixed;
@@ -448,7 +455,8 @@
     margin-top: 140px;
     border-width: 1.5px;
     border-color: #05386b;
-    width: 100%;
+    width: 100%;    display: none;
+
   }
   .line-9 {
     position: fixed;
@@ -458,7 +466,8 @@
     border-color: #05386b;
     width: 100%;
     animation: line1 3s linear;
-    opacity: 0;
+    opacity: 0;    display: none;
+
   }
   .note-5 {
     color: #05386b;

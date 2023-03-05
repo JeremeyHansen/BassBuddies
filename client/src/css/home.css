@@ -78,7 +78,7 @@
     top: 40%;
   }
   .main-text h6 {
-    font-size: 1.2rem;
+    font-size: .9rem;
   }
   .main-text span {
     color: #5cdb95;
@@ -108,13 +108,6 @@
     width: 90%;
     margin-left: 5%;
   }
-  .red{
-    color: red;
-  }
-  .blue{
-    color: rgb(18, 192, 255);
-  }
-
   .paragraph-class h3{
     font-family: monospace;
     color: #05386b;
