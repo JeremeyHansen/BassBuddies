@@ -1,6 +1,5 @@
 import { GoogleMap, Marker, InfoWindow } from "@react-google-maps/api";
 import "../css/map.css";
-import { useState } from "react";
 import { BsMusicNote } from "react-icons/bs";
 
 export default function Map({ center, concertsToDisplay, selectedMarker, setSelectedMarker }) {
