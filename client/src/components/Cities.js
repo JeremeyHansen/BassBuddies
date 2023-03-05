@@ -183,16 +183,16 @@ export default function Cities() {
         </div>
       </div>
       <div className="city-music-container">
-        <BsMusicNote className="note-5" />
+        {/* <BsMusicNote className="note-5" /> */}
         <BsMusicNote className="note-6" />
-        <BsMusicNote className="note-7" />
+        {/* <BsMusicNote className="note-7" />
         <BsMusicNote className="note-8" />
-        <BsMusicNote className="note-9" />
+        <BsMusicNote className="note-9" /> */}
         <BsMusicNote className="note-10" />
-        <BsMusicNoteBeamed className="note2-5" />
-        <BsMusicNoteBeamed className="note2-6" />
+        {/* <BsMusicNoteBeamed className="note2-5" /> */}
+        {/* <BsMusicNoteBeamed className="note2-6" /> */}
         <BsMusicNoteBeamed className="note2-7" />
-        <BsMusicNoteBeamed className="note2-8" />
+        {/* <BsMusicNoteBeamed className="note2-8" /> */}
         <BsMusicNoteBeamed className="note2-9" />
         <BsMusicNoteBeamed className="note2-10" />
       </div>
