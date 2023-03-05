@@ -1,7 +1,7 @@
 import "../css/concertcard.css";
 import { BsMusicNote } from "react-icons/bs";
 
-export default function ConcertCard({ concert }) {
+export default function ConcertCard({ concert, setMapOpen, setSelectedMarker }) {
 
   const date = concert.date;
   const year = date.slice(0, date.length - 6)
@@ -39,8 +39,13 @@ export default function ConcertCard({ concert }) {
   }
   const finalDate = month + ' ' + day + ', ' + year
   
+
+  function handleClick(){
+    setSelectedMarker((concert))
+    setMapOpen(true)
+  }
   return (
-    <div className="concert-card">
+    <div className="concert-card" onClick={handleClick}>
       <div className="card-venue">
         <h4 as="h5">{concert.venue.name}</h4>
       </div>

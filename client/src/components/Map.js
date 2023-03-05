@@ -3,11 +3,11 @@ import "../css/map.css";
 import { useState } from "react";
 import { BsMusicNote } from "react-icons/bs";
 
-export default function Map({ center, concerts, concertsToDisplay }) {
-  const [selectedMarker, setSelectedMarker] = useState("");
+export default function Map({ center, concerts, selectedMarker, setSelectedMarker }) {
 
   return (
     <div className="map-container">
+      <div className="border-map"></div>
       <GoogleMap
         center={center}
         zoom={12}
@@ -22,7 +22,7 @@ export default function Map({ center, concerts, concertsToDisplay }) {
           ],
         }}
       >
-        {concertsToDisplay?.map((concert) => {
+        {concerts?.map((concert) => {
           const position = {
             lat: concert.venue.latitude,
             lng: concert.venue.longitude,
@@ -34,7 +34,7 @@ export default function Map({ center, concerts, concertsToDisplay }) {
               title={concert.venue}
               icon={{ url: "/pinn.png" }}
               onClick={() => {
-                setSelectedMarker(concert);
+              setSelectedMarker(concert);
               }}
             ></Marker>
           );
@@ -42,7 +42,7 @@ export default function Map({ center, concerts, concertsToDisplay }) {
         {selectedMarker && (
           <InfoWindow
             onCloseClick={() => {
-              setSelectedMarker("");
+              setSelectedMarker("")
             }}
             position={{
               lat: selectedMarker.venue.latitude,

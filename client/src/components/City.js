@@ -36,21 +36,22 @@ export default function City() {
 
   //search function for out list
   const [searchTerm, setSearchTerm] = useState("");
-
-  const concertsToDisplay = concerts.filter((concert) => (
+  
+  const concertsToDisplay = concerts?.filter((concert) => (
     (
       concert.venue.name +
       concert.artistList.map((artist) => artist.name) +
       concert.date
-    )
+      )
       .toLowerCase()
       .includes(searchTerm.toLowerCase())
-  ))
+      ))
+      
+      function handleChange(event) {
+        setSearchTerm(event.target.value);
+      }
 
-  function handleChange(event) {
-    setSearchTerm(event.target.value);
-  }
-
+      
   //function to open search
 
   const [searchOpen, setSearchOpen] = useState(false);
@@ -77,6 +78,11 @@ export default function City() {
       // setUserLongitude(position.coords.longitude);
   }
 
+  //setting state to map marker
+  const [selectedMarker, setSelectedMarker] = useState("");
+
+
+
   return (
     <div className="whole-container">
       <ConcertLoadPage className={className} />
@@ -94,12 +100,12 @@ export default function City() {
           onChange={handleChange}
         ></input>
       )}
-      {mapOpen && <Map center={center} concerts={concerts} concertsToDisplay={concertsToDisplay}/>}
+      {mapOpen && <Map center={center} concerts={concerts} setConcerts={setConcerts} selectedMarker={selectedMarker} setSelectedMarker={setSelectedMarker}/>}
       <div className="card-container">
         <motion.div layout>
           <AnimatePresence>
             {concertsToDisplay?.map((concert) => {
-              return <ConcertCard key={concert.id} concert={concert} />;
+              return <ConcertCard key={concert.id} setSelectedMarker={setSelectedMarker} concert={concert} setMapOpen={setMapOpen} setConcerts={setConcerts} concerts={concerts}/>;
             })}
           </AnimatePresence>
         </motion.div>
