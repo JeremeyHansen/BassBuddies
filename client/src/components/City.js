@@ -37,7 +37,7 @@ export default function City() {
   //search function for out list
   const [searchTerm, setSearchTerm] = useState("");
 
-  const concertsToDisplay = concerts.filter((concert) =>
+  const concertsToDisplay = concerts.filter((concert) => (
     (
       concert.venue.name +
       concert.artistList.map((artist) => artist.name) +
@@ -45,7 +45,7 @@ export default function City() {
     )
       .toLowerCase()
       .includes(searchTerm.toLowerCase())
-  );
+  ))
 
   function handleChange(event) {
     setSearchTerm(event.target.value);
