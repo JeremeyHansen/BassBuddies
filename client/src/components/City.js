@@ -100,7 +100,7 @@ export default function City() {
           onChange={handleChange}
         ></input>
       )}
-      {mapOpen && <Map center={center} concerts={concerts} setConcerts={setConcerts} selectedMarker={selectedMarker} setSelectedMarker={setSelectedMarker}/>}
+      {mapOpen && <Map center={center} concertsToDisplay={concertsToDisplay} setConcerts={setConcerts} selectedMarker={selectedMarker} setSelectedMarker={setSelectedMarker}/>}
       <div className="card-container">
         <motion.div layout>
           <AnimatePresence>

@@ -3,7 +3,7 @@ import "../css/map.css";
 import { useState } from "react";
 import { BsMusicNote } from "react-icons/bs";
 
-export default function Map({ center, concerts, selectedMarker, setSelectedMarker }) {
+export default function Map({ center, concertsToDisplay, selectedMarker, setSelectedMarker }) {
 
   return (
     <div className="map-container">
@@ -22,7 +22,7 @@ export default function Map({ center, concerts, selectedMarker, setSelectedMarke
           ],
         }}
       >
-        {concerts?.map((concert) => {
+        {concertsToDisplay?.map((concert) => {
           const position = {
             lat: concert.venue.latitude,
             lng: concert.venue.longitude,
