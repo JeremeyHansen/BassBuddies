@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BsMusicNote, BsMusicNoteBeamed } from "react-icons/bs";
 import "animate.css";
-import { Bars } from "react-loader-spinner";
 
 export default function Cities() {
   //data for the different cities we want in the site
@@ -13,26 +12,36 @@ export default function Cities() {
       city: "Denver",
       state: "CO",
       cityId: 76,
+      latitude: 39.7392,
+      longitude: -104.9903
     },
     {
       city: "Los Angeles",
       state: "CA",
       cityId: 73,
+      latitude: 34.0522,
+      longitude: -118.2437
     },
     {
       city: "San Diego",
       state: "CA",
       cityId: 81,
+      latitude: 32.7157,
+      longitude: -117.1611
     },
     {
       city: "San Francisco",
       state: "CA",
       cityId: 72,
+      latitude: 37.7749,
+      longitude: -122.4194
     },
     {
       city: "Seattle",
       state: "WA",
       cityId: 77,
+      latitude: 47.6062,
+      longitude: -122.3321
     },
   ];
   const eastCities = [
@@ -40,26 +49,36 @@ export default function Cities() {
       city: "Atlanta",
       state: "GA",
       cityId: 84,
+      latitude: 33.7488,
+      longitude: -84.3877
     },
     {
       city: "Charlotte",
       state: "NC",
       cityId: 101,
+      latitude: 35.2271,
+      longitude: -80.8431
     },
     {
       city: "Chicago",
       state: "IL",
       cityId: 70,
+      latitude: 41.8781,
+      longitude: -87.6298
     },
     {
       city: "Miami",
       state: "FL",
       cityId: 87,
+      latitude: 25.7617,
+      longitude: -80.1918
     },
     {
       city: "New York City",
       state: "NY",
       cityId: 70,
+      latitude: 40.7128,
+      longitude: -74.0060
     },
   ];
 
@@ -141,46 +160,10 @@ export default function Cities() {
       <div className="cities-mobile-container">
         <div className={buttonContainer}>
           <button className={buttonClassEast} onClick={handleEast}>
-          {/* <Bars
-              height="30"
-              width="30"
-              color="#5cdb95"
-              ariaLabel="bars-loading"
-              wrapperStyle={{}}
-              wrapperClass=""
-              visible={true}
-            /> */}
             <span className="button-text-yes">{buttonTextEast} </span>
-            {/* <Bars
-              height="30"
-              width="30"
-              color="#5cdb95"
-              ariaLabel="bars-loading"
-              wrapperStyle={{}}
-              wrapperClass=""
-              visible={true}
-            /> */}
           </button>
           <button className={buttonClassWest} onClick={handleWest}>
-          {/* <Bars
-              height="30"
-              width="30"
-              color="#5cdb95"
-              ariaLabel="bars-loading"
-              wrapperStyle={{}}
-              wrapperClass=""
-              visible={true}
-            /> */}
             <span className="button-text-yes">{buttonTextWest} </span>
-            {/* <Bars
-              height="30"
-              width="30"
-              color="#5cdb95"
-              ariaLabel="bars-loading"
-              wrapperStyle={{}}
-              wrapperClass=""
-              visible={true}
-            /> */}
           </button>
         </div>
         <div className="mobile-city-container">

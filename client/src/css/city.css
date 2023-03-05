@@ -10,6 +10,14 @@
     margin-left: 25%;
     font-family: monospace;
   }
+  .map-icon{
+    color: #5cdb95;
+    font-size: 1.4rem;
+    margin-left: 10px;
+  }
+  .map-icon:hover{
+    cursor: pointer;
+  }
   .search-input {
     margin-top: 20px;
     border: none;
@@ -36,7 +44,7 @@
   .search-icon {
     color: #5cdb95;
     font-size: 2rem;
-    /* padding-right: 5px; */
+    margin-right: 10px;
   }
   .search-icon:hover {
     cursor: pointer;
@@ -661,7 +669,7 @@
 
   .mobile-city-container {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .mobile-city {
     font-family: "Courier New", Courier, monospace;
